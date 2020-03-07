@@ -38,8 +38,8 @@
                         <div class="col-md-3 ">
                             <button class="btn btn-primary btn-lg" id="btn-9">9</button>
                         </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-primary btn-lg" id="btn-mult">x</button>
+                        <div class="col-md-3 ">                            
+                            <button class="btn btn-primary btn-lg" id="btn-suma">+</button>
                         </div>
                     </div>
                     <!-- form row-->
@@ -53,9 +53,9 @@
                         <div class="col-md-3 ">
                             <button class="btn btn-primary btn-lg" id="btn-6">6</button>
                         </div>
-                        <div class="col-md-3 ">
-                            <button class="btn btn-primary btn-lg" id="btn-resta">-</button>
-                        </div>
+                        <div class="col-md-3 ">                            
+                            <button class="btn btn-primary btn-lg" id="btn-resta">-</button>                            
+                            </div>
                     </div>
                     <!-- form row-->
                     <div class="form-row mb-1">
@@ -69,8 +69,8 @@
                             <button class="btn btn-primary btn-lg" id="btn-3">3</button>
                         </div>
                         <div class="col-md-3 ">
-                            <button class="btn btn-primary btn-lg" id="btn-suma">+</button>
-                        </div>
+                            <button class="btn btn-primary btn-lg" id="btn-mult">x</button>
+                            </div>
                     </div>
                     <!-- form row-->
                     <div class="form-row mb-1">
@@ -82,11 +82,22 @@
                         </div>
                         <div class="col-md-3 ">
                             <button class="btn btn-primary btn-lg" id="btn-c">C</button>
+                            </div>
+                        <div class="col-md-3 ">                            
+                            <button class="btn btn-primary  btn-lg" id="btn-div">/</button>
                         </div>
+                    </div>
+
+                    <div class="form-row mb-1">
                         <div class="col-md-3 ">
                             <button class="btn btn-primary btn-lg" id="btn-igual">=</button>
                         </div>
                     </div>
+
+
+                    
+                    
+                    
                     <!-- form row-->
                 </form>
             </div>
@@ -194,6 +205,13 @@
                 $("#resultado").val("");
             });
 
+            $("#btn-div").click(function(event){
+                event.preventDefault();
+                let valor = $("#resultado").val();
+                numero= parseFloat(valor);
+                operacion = 4;
+                $("#resultado").val("");
+            });
             
             $("#btn-igual").click(function(event){
                 event.preventDefault();
@@ -217,11 +235,17 @@
                         res = numero * parseFloat(valor);
                         $("#resultado").val(res);
                     break;
+
+                     case 4:
+                        res = numero / parseFloat(valor);
+                        $("#resultado").val(res);
+                    break;
                 }
                 
                 
             });
         });
+        
     </script>
 
 </body>
