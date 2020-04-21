@@ -1,0 +1,47 @@
+header {
+  background: #55ddff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+header button {
+  background: wheat;
+}
+
+header button:hover {
+  background: #FF9B71;
+}
+
+.container {
+  background: white;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+.container h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: xx-large;
+}
+
+.container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: larger;
+}
+
+.container p {
+  font-family: "Playfair Display", serif;
+  font-size: medium;
+}
+/*# sourceMappingURL=style.css.map */

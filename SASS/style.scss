@@ -1,0 +1,42 @@
+$fuente1 : 'Open Sans', sans-serif;
+$fuente2 : 'Playfair Display', serif;
+$Color1 : wheat;
+$Color2 : #FF9B71;
+
+header{
+    background: #55ddff;
+    display: flex;
+    height: 10vh;
+    
+    justify-content: center;
+    color: white;
+    button{
+        background: $Color1;
+        &:hover{
+            background: $Color2;
+        }
+    }
+}
+
+.container{
+    background:white ;    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    h1{
+        font-family: $fuente1;
+        font-size: xx-large;
+    }
+    
+    h2{
+        font-family: $fuente2;
+        font-size: larger;        
+    }
+
+    p{
+        font-family: $fuente2;
+        font-size: medium;
+        
+    }
+}
